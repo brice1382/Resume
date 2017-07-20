@@ -1,0 +1,53 @@
+<!--<div class="testBox"></div>-->
+<div class="container contactContainer" style="width: 35%">
+    <br>
+    <form class="form-horizontal contactForm" ng-submit="ctt.SendContactForm()" name="ctt.contact" novalidate>
+        <fieldset>
+            <legend id="formLegend">Contact Request Form</legend>
+            <div class="form-group">
+                <div class="col-md-10 col-md-offset-1">
+                    <label class="control-label" for="name">Full Name</label>
+                    <input id="name" name="name" ng-model="ctt.name" type="text" placeholder="Full Name..."
+                           class="form-control" required autofocus>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10 col-md-offset-1">
+                    <label class="control-label" for="contactPhone">Phone</label>
+                    <input class="form-control" id="contactPhone" type="text" name="phone" placeholder="Phone Number..."
+                           mask="(999) 999-9999" clean="true" ng-model="ctt.phone">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10 col-md-offset-1">
+                    <label class="control-label" for="email">Return Email</label>
+                    <input id="email" ng-model="ctt.email" name="email" type="email" placeholder="Your return email..."
+                           class="form-control" required>
+                    <p class="help-block" style="color: red"
+                       ng-show="contact.email.$dirty && contact.email.$invalid">Please Enter Proper Email Format</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10 col-md-offset-1">
+                    <label class="control-label" for="question">Question</label>
+                    <textarea ng-keyup="ctt.question.ngKeyup()" style="resize: none" maxlength="250" class="form-control" ng-model="ctt.questionText"
+                              id="question" name="question" placeholder="Send us your questions..."></textarea>
+                    <span class="help-block" id="text-spot">{{ctt.characters}}</span>
+                </div>
+            </div>
+            <div class="form-group" style="height: 50px">
+                <label class="control-label" for="submit"></label>
+                <div class="col-md-10 col-md-offset-1">
+                    <button id="submit" name="submit" class="btn spBtn-succ">Submit</button>
+                    <button id="clear" name="clear" type="button" ng-click="ctt.clearForm()" class="btn spBtn-dflt">Clear Form</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <br>
+</div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+
+

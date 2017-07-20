@@ -1,0 +1,98 @@
+<div class="modal fade borderer animated zoomIn" id="jsModal" tabindex="-1" role="dialog"
+     aria-labelledby="contactModalLabel">
+    <div class="modal-dialog borderer" role="document">
+        <div class="modal-content borderer">
+            <div class="modal-header custom-bg">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i
+                        class="fa fa-close" style="color: azure"></i></button>
+                <h4 class="modal-title" id="myModalTitle" style="color: azure">JS Code Snippet</h4>
+            </div>
+            <div class="modal-body borderer" style="height: 400px">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <span style="margin-left: 20px" class="snipCSClass">var </span>
+                            <span class="">i; </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span style="margin-left: 20px" class="snipCSClass">for </span>
+                            (i = 1; i <= 20; i++) {
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span style="margin-left: 40px" class="snipCSClass">if </span>
+                            (i % 3 === 0) {
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span style="margin-left: 60px" class="snipCSClass">var </span>
+                            time = <span class="snipCSClass">new </span>
+                            Date().<span style="color: gold">toDateString</span>();
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span style="margin-left: 60px" class=""><span style="color: purple">document</span>.write(' "' + i + '"' + '-' + time +
+                    '"<"br">"');</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span style="margin-left: 40px" class="snipCSNameS">Database</span>
+                            .SetInitializer<<span class="snipCSNameS">UserDbContext</span>>(<span class="snipCSClass">new</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span style="margin-left: 60px" class="snipCSNameS">CreateDatabaseIfNotExists</span><<span
+                                class="snipCSNameS">UserDbContext</span>>());
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span style="margin-left: 20px">}</span>
+                        </td>
+                    </tr>
+                    <tr ng-include="'views/layouts/code-snippets/c-sharp/br-tpl.html'"></tr>
+                    <tr>
+                        <td>
+                            <span style="margin-left: 20px" class="snipCSClass">public virtual </span><span
+                                class="snipCSNameS">DbSet</span><<span class="snipCSNameS">UserEntity</span>>
+                            StoredUser { <span class="snipCSClass">get</span>; <span class="snipCSClass">set</span>; }
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <code style="line-height: normal">
+                    var i;<br>
+                    for (i = 1; i <= 20; i++) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;if(i % 3 === 0) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var time = new Date().toDateString();<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(' "' + i + '"' + '-' + time +
+                    '[br]');<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;} else {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var utc = new Date().UTC();<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.write(' "' + i + '"' + '-' + utc + '[br]');<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    }<br>
+                    <br>
+                    var f = new Date().toDateString();<br>
+                    var u = f.split(/\s/);<br>
+                    var c = u.slice(1);<br>
+                    var k = "".concat(c);<br>
+
+                    var you = k.replace(/,/g, ' ');<br>
+                </code>
+            </div>
+            <div class="modal-footer">
+                <md-button style="font-weight: bold" type="button" class="customBtnDefault" data-dismiss="modal">Close
+                    <i class="fa fa-times"></i></md-button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+<div class="modal fade borderer animated zoomIn" id="angularCtrlModal" tabindex="-1" role="dialog"
+     aria-labelledby="contactModalLabel">
+    <div class="modal-dialog borderer" role="document">
+        <div class="modal-content borderer">
+            <div class="modal-header custom-bg">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i
+                        class="fa fa-close" style="color: azure"></i></button>
+                <h4 class="modal-title" id="myModalTitle" style="color: azure">AngularJS Controller Snippet</h4>
+            </div>
+            <div class="modal-body borderer" style="height: auto">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                (<span class="snipJSNGFunc">function</span>() {
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="snipJSNGStr" style="margin-left: 20px">'use strict'</span><span class="snipJSFunc">;</span>
+                            </td>
+                        </tr>
+                        <tr ng-include="'views/layouts/code-snippets/c-sharp/br-tpl.html'"></tr>
+                        <tr>
+                            <td>
+                                <span class="snipJSNGMdl" style="margin-left: 20px">angular</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span style="margin-left: 40px">.</span><span class="snipJSNGFnName">module</span>(<span class="snipJSNGStr">'myApp'</span>)
+                            </td>
+                        </tr>
+                        <tr ng-include="'views/layouts/code-snippets/c-sharp/br-tpl.html'"></tr>
+                        <tr>
+                            <td>
+                                <span class="snipHelp" style="margin-left: 40px">// Wrap controller function with [] for Dependency Injection during Minify.</span>
+                                <span style="margin-left: 40px">.</span><span class="snipJSNGPurp">controller</span>(
+                                <span class="snipJSNGStr">'YourCtrl'</span><span class="snipJSNGFunc">, </span>[<span class="snipJSNGStr">'$scope'</span>
+                                <span class="snipJSNGFunc">, </span><span class="snipJSNGFunc">function</span>($scope) {
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span style="margin-left: 60px" class="snipJSNGFunc">var </span>vm = <span class="snipJSNGFunc">this;</span>
+                            </td>
+                        </tr>
+                        <tr ng-include="'views/layouts/code-snippets/c-sharp/br-tpl.html'"></tr>
+                        <tr>
+                            <td>
+                                <span style="margin-left: 60px">vm.</span><span class="snipJSNGMdl">title </span>=
+                                <span class="snipJSNGStr">'Hello, World!!!'</span>
+                                <span class="snipJSNGFunc">;</span>
+                            </td>
+                        </tr>
+                        <tr ng-include="'views/layouts/code-snippets/c-sharp/br-tpl.html'"></tr>
+                        <tr>
+                            <td>
+                                <span style="margin-left: 40px">}])</span><span class="snipJSNGFunc">;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>})()</span><span class="snipJSNGFunc">;</span>
+                            </td>
+                        </tr>
+                        <tr ng-include="'views/layouts/code-snippets/c-sharp/br-tpl.html'"></tr>
+                        <tr>
+                            <td>
+                                <span class="snipHelp">// This is wrapped in what's called an IIFE, immediately-invoked function expression.</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer" style="height: 70px">
+                <button style="font-weight: bold" type="button" class="btn spBtn-dflt" data-dismiss="modal">
+                    Close
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

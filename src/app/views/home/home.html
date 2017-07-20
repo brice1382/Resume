@@ -1,0 +1,160 @@
+<div>
+
+
+    <div class="container boxShad custom-bg" style="background-color: #a5a5a5; border-radius: 6px;">
+        <div class="animated flipInX">
+            <div style="height: 30px"></div>
+            <div class="jumbotron insetShad boxShad">
+                <p class="jumbotronTxt" id="jumbotronTxt">
+                    <i class="fa fa-chevron-left"></i>Brandon Rice<i class="fa fa-chevron-right"></i>
+                </p>
+                <p class="help-block" style="text-align: center">
+                    Web Developer, Problem Solver, Energy Drink Consumer.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="space-down"></div>
+    <div class="parallax" style="height: 300px;">
+        <div class="container animated slideInLeft">
+            <div class="panel boxShad" id="testPanel" style="border-radius: 6px; margin-top: 50px">
+                <h1 style="text-align: center; color: black; font-size: 20px">The Technology</h1>
+                <hr style="border: 1px solid black; margin-top: 5px">
+                <p style="text-align: center; padding-left: 15px; padding-right: 15px">
+                    This site was done in AngularJS for the front end using Font-Awesome, Animate.css and of course
+                    Bootstrap. For the server-side code I used ASP.NET MVC 5, Entity Framework 6, WebAPI 2
+                    and Microsoft SQL Server 2017. I host it myself using Windows Server 2012 R2 and IIS.
+                </p>
+                <br>
+            </div>
+        </div>
+    </div>
+    <section style="height: 300px">
+        <canvas class="noMargin" style="height: 300px; width: 100%; padding: 0">
+
+        </canvas>
+    </section>
+    <section class="sectCustom" style="margin-bottom: 0">
+        <div class="row noMargin" style="margin: 0">
+            <div class="col-md-4">
+                <p class="QC">Questions Or Comments?</p>
+            </div>
+            <div class="col-md-4">
+                <div class="button-holder">
+                    <button class="customPrimary smalls" ng-click="hm.contact()" id="myButt" type="button"
+                            style="">Contact Me
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4 nukeIt" style="padding-right: 0">
+                <div class="parallax" style="width: 100%"></div>
+            </div>
+        </div>
+    </section>
+    <section class="special" style="background-color: #a5a5a5; height: auto">
+        <div role="tabpanel" style="width: 100%">
+            <ul class="nav nav-tabs nav-justified" style="background-color: #eeeeee" role="tablist">
+                <li role="presentation" class="active">
+                    <a href aria-controls="TrainingTools" role="tab" data-toggle="tab" data-target="#TrainingTools">
+                        Helpful Resources
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href aria-controls="RequestTrainer" role="tab" data-toggle="tab" data-target="#RequestTrainer">
+                        Online Certificates
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content" style="background-color: #a5a5a5; height: auto">
+                <div role="tabpanel" class="tab-pane fade in active" id="TrainingTools">
+                    <div class="space-down-30" style="height: 30px"></div>
+                    <h1 style="text-align: center; font-size: large; color:black">Site Content</h1>
+                    <div>
+                        <div class="row noMargin">
+                            <div class="col-md-6">
+                                <div class="sp30"></div>
+                                <div class="row noMargin">
+                                    <div class="space-down-sm"></div>
+                                    <div style="height: 100px">
+                                        <div class="col-md-8">
+                                            <p class="tabOneText">
+                                                Here you will find a small collection of code snippets.
+                                            </p>
+                                            <div class="button-holder">
+                                                <button class="spBtn-dang snippets" ng-click="hm.about()"
+                                                        id="snippets" type="button">
+                                                    Code Snippets&nbsp;
+                                                    <i class="fa fa-code"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="RequestTrainer">
+                    <div class="space-down-30" style="height: 30px"></div>
+                    <div class="row noMargin">
+                        <div class="col-md-12">
+                            <table class="table table-bordered table-condensed table-striped" id="tables">
+                                <tbody class="tBODY">
+                                    <th class="homeTable nukeIt" style="text-align: center; font-size: 25px; color: azure; background-color: #003067;" colspan="3">
+                                        Certificates Earned from SoloLearn.com
+                                    </th>
+                                    <th class="mobile">Certs</th>
+                                    <tr id="trMobile" ng-include="'views/home/components/HTML-TR.html'"></tr>
+                                    <tr id="trMobile" ng-include="'views/home/components/CSS-TR.html'"></tr>
+                                    <tr id="trMobile" ng-include="'views/home/components/JS-TR.html'"></tr>
+                                    <tr id="trMobile" ng-include="'views/home/components/SQL-TR.html'"></tr>
+                                    <tr id="trMobile" ng-include="'views/home/components/CSharp-TR.html'"></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div ng-include="'views/home/components/CSS-Modal.html'"></div>
+    <div ng-include="'views/home/components/HTML-Modal.html'"></div>
+    <div ng-include="'views/home/components/JS-Modal.html'"></div>
+    <div ng-include="'views/home/components/SQL-Modal.html'"></div>
+    <div ng-include="'views/home/components/CSharp-Modal.html'"></div>
+    <section class="section4" style="padding: 0">
+        <div id="map" style="padding: 0"></div>
+    </section>
+</div>
+<script>
+    var marker;
+    function initMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(42.972667, -85.677600),
+            zoom: 12,
+            scrollwheel: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('map'), mapOptions);
+        spireMarker();
+    }
+
+    function addMarker(location) {
+        marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+    }
+
+    function spireMarker() {
+        GrandRapids = new google.maps.LatLng(42.972667, -85.677600);
+        addMarker(GrandRapids)
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiXPJs9Ms5pArwEUGph5X-Nln8ejjqM68&callback=initMap" async
+        defer></script>
+
+
+

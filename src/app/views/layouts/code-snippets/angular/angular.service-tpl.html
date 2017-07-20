@@ -1,0 +1,89 @@
+<div class="modal fade borderer animated zoomIn" id="angularServicelModal" tabindex="-1" role="dialog"
+     aria-labelledby="contactModalLabel">
+    <div class="modal-dialog borderer" role="document">
+        <div class="modal-content borderer">
+            <div class="modal-header custom-bg">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i
+                        class="fa fa-close" style="color: azure"></i></button>
+                <h4 class="modal-title" id="myModalTitle" style="color: azure">AngularJS Service Snippet</h4>
+            </div>
+            <div class="modal-body borderer" style="height: auto">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            (<span class="snipJSNGFunc">function</span>() {
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="snipJSNGStr" style="margin-left: 20px">'use strict'</span><span class="snipJSFunc">;</span>
+                        </td>
+                    </tr>
+                    <tr ng-include="'views/layouts/code-snippets/c-sharp/br-tpl.html'"></tr>
+                    <tr>
+                        <td>
+                            <span class="snipJSNGMdl" style="margin-left: 20px">angular</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span style="margin-left: 40px">.</span><span class="snipJSNGFnName">module</span>(<span class="snipJSNGStr">'login'</span>)<span class="snipJSNGFunc">;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span style="margin-left: 40px">.</span><span class="snipJSNGMdl">service</span>(<span class="snipJSNGStr">'MyService'</span>
+                            <span class="snipJSNGFunc">, </span>[<span class="snipJSNGStr">'$resource'</span><span class="snipJSNGFunc">, </span>
+                            <span class="snipJSNGStr">'MyConfig'</span><span class="snipJSNGFunc">, </span>
+                            <span class="snipJSNGStr">'$localStorage'</span><span class="snipJSNGFunc">, </span>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span style="margin-left: 60px" class="snipJSNGFunc">function</span>
+                            ($res<span class="snipJSNGFunc">, </span>
+                            Cfg<span class="snipJSNGFunc">, </span>
+                            $localStorage) {
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span style="margin-left: 60px" class="snipJSNGFunc">var </span>sv = <span class="snipJSNGFunc">this;</span>
+                        </td>
+                    </tr>
+                    <tr ng-include="'views/layouts/code-snippets/c-sharp/br-tpl.html'"></tr>
+                    <tr>
+                        <td>
+                            <span style="margin-left: 60px" class="snipJSNGFunc">var </span>apiResource =
+                            $res(<span class="snipJSNGStr">'content'</span><span class="snipJSNGFunc">,
+                            </span>{ }<span class="snipJSNGFunc">, </span>{
+
+                        </td>
+                    </tr>
+                    <tr ng-include="'views/layouts/code-snippets/angular/ng.service.routes-tpl/ng.service.routes-tpl.html'"></tr>
+                    <tr ng-include="'views/layouts/code-snippets/angular/ng.service.routes-tpl/ng.service.functions-tpl.html'"></tr>
+                    <tr>
+                        <td>
+                            <span style="margin-left: 40px">}])</span><span class="snipJSNGFunc">;</span>
+                        </td>
+                    </tr>
+                    <tr ng-include="'views/layouts/code-snippets/c-sharp/br-tpl.html'"></tr>
+                    <tr>
+                        <td>
+                            <span>})()</span><span class="snipJSNGFunc">;</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer" style="height: 70px">
+                <button style="font-weight: bold" type="button" class="btn spBtn-dflt" data-dismiss="modal">
+                    Close
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

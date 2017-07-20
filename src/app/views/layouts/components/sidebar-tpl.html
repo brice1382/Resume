@@ -1,0 +1,270 @@
+<div class="col-md-2 sidebar">
+    <div class="row">
+        <div class="absolute-wrapper"></div>
+        <div class="side-menu">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="side-menu-container">
+                    <br>
+                    <h2 style="text-align: center">Code/Work Samples</h2>
+                    <br>
+                    <ul class="nav navbar-nav">
+                        <li class="active panel panel-default">
+                            <a href class="black" data-toggle="collapse" style="cursor: pointer"
+                               data-target="#dropdown-github2">
+                                <i class="fa fa-github"></i> GitHub Repos & Gists <i class="fa fa-caret-down"></i>
+                            </a>
+                            <div id="dropdown-github2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <a href="https://github.com/brice1382/projectSP" target="_blank">
+                                                <i class="fa fa-github"></i> Spire Web <i class="fa fa-external-link"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/brice1382/DotNetAPI" target="_blank">
+                                                <i class="fa fa-github"></i> .NET API <i class="fa fa-external-link"></i>
+                                                <p class="help-block">Simple WebAPI with user functions.</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/brice1382/Rareup" target="_blank">
+                                                <i class="fa fa-github"></i> www.rareupcycle.com <i class="fa fa-external-link"></i>
+                                                <p class="help-block">Repo for working site. A few minor changes haven't been pushed.</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://gist.github.com/brice1382/920a6b8322126be6099123526fca44e9" target="_blank">
+                                                <i class="fa fa-github"></i> MSSQL Create Model <i class="fa fa-external-link"></i>
+                                                <p class="help-block">Script for creating C-# Models.</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li ng-if="isFlashy" class="panel panel-default" id="dropdown1">
+                            <a class="animated flash" id="snips" data-toggle="collapse" style="cursor: pointer"
+                               data-target="#dropdown-lvl1">
+                                <i class="fa fa-code"></i> <span style="color: black">Code Snippets</span> <i class="fa fa-caret-down"></i>
+                            </a>
+                            <div id="dropdown-lvl1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <a href data-toggle="modal" data-target="#jsModal">
+                                                JavaScript
+                                                <i class="fa fa-caret-down"></i>
+                                            </a>
+                                            <div id="dropdown-angular" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="nav navbar-nav">
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#angularCtrlModal">
+                                                                Controller
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#angularDirectiveModal">
+
+                                                                Directive
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#angularServiceModal">
+                                                                Service
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href>
+                                                                Service
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#angularModulelModal">
+                                                                Module
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="collapse" style="cursor: pointer" data-target="#dropdown-csharp">
+                                                C Sharp <i class="fa fa-caret-down"></i>
+                                            </a>
+                                            <div id="dropdown-csharp" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="nav navbar-nav">
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#csharpCtrlModal">Controller
+                                                                <p class="help-block">(Home Controller)</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#csharpApiCtrlModal">ApiController
+                                                                <p class="help-block">(User API)</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#csharpDAOModal">DAO
+                                                                <p class="help-block">(Data Access Object)</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#csharpServiceModal">Service
+                                                                <p class="help-block">(User Service)</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#csharpModelModal">Model
+                                                                <p class="help-block">(User Model)</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#csharpEntityModal">
+                                                                Entity
+                                                                <p class="help-block">(User Entity)</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="collapse" style="cursor: pointer" data-target="#dropdown-angular">
+                                                AngularJS
+                                                <i class="fa fa-caret-down"></i>
+                                            </a>
+                                            <div id="dropdown-angular" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="nav navbar-nav">
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#angularCtrlModal">
+                                                                Controller
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#angularDirectiveModal">
+
+                                                                Directive
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#angularServiceModal">
+                                                                Service
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href>
+                                                                Service
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#angularModulelModal">
+                                                                Module
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li ng-if="!isFlashy" class="panel panel-default" id="dropdown1">
+                            <a class="animated" id="snips" data-toggle="collapse" style="cursor: pointer"
+                               data-target="#dropdown-lvl1">
+                                <span style="color: black"><i class="fa fa-code"></i> Code Snippets <i class="fa fa-caret-down"></i></span>
+                            </a>
+                            <div id="dropdown-lvl1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <a href data-toggle="collapse" data-target="#dropdown-javascript">
+                                                JavaScript
+                                                <i class="fa fa-caret-down"></i>
+                                            </a>
+                                            <div id="dropdown-javascript" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="nav navbar-nav">
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#angularCtrlModal">
+                                                                Controller
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#angularServicelModal">
+                                                                Directive
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#angularServiceModal">
+                                                                Service
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#angularModulelModal">
+                                                                Module
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="collapse" style="cursor: pointer" data-target="#dropdown-csharp">
+                                                C Sharp
+                                                <i class="fa fa-caret-down"></i>
+                                            </a>
+                                            <div ng-include="'views/layouts/components/sidebar-components/csharp-menu.html'"></div>
+                                        </li>
+                                        <li>
+                                            <a data-toggle="collapse" style="cursor: pointer" data-target="#dropdown-angular">
+                                                AngularJS <i class="fa fa-caret-down"></i>
+                                            </a>
+                                            <div id="dropdown-angular" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="nav navbar-nav">
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#angularCtrlModal">
+                                                                Controller
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#angularDirectiveModal">
+                                                                Directive
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#angularServicelModal">
+                                                                Service
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href data-toggle="modal" data-target="#angularModulelModal">
+                                                                Module
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="active panel panel-default">
+                            <a href class="black" data-toggle="collapse" style="cursor: pointer"
+                               data-target="#dropdown-sites">
+                                <i class="fa fa-globe"></i> Sites I've Worked On <i class="fa fa-caret-down"></i>
+                            </a>
+                            <div ng-include="'views/layouts/components/sidebar-components/dropdown-menu.html'"></div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="brport">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brandon Rice | Porfolio</title>
+    <link rel="stylesheet" href="dist/app-1500520956-min.css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+
+    <link rel="stylesheet" href="bower_components/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+
+    <!-- inject:css -->
+    <!-- endinject -->
+
+    <!-- bower:css -->
+    <!-- endinject -->
+
+    <!-- bowerSecond:css -->
+    <!-- endinject -->
+
+    <!-- inject:head:js -->
+    <!-- endinject -->
+
+    <!--
+        ____   _____ _____
+        |  _ \ / ____|  __ \
+        | |_) | (___ | |__) |
+        |  _ < \___ \|  _  /
+        | |_) |____) | | \ \
+        |____/|_____/|_|  \_\
+
+        Welcome to my Portfolio page Brandon Scott Rice.
+    -->
+
+</head>
+<body>
+
+<div ng-include="'views/layouts/navbar/navbar-tpl.html'"></div>
+
+<div ng-view></div>
+
+<div ng-include="'views/layouts/footer/footer-tpl.html'"></div>
+
+<a id="myBtn" title="Go to top">Top</a>
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    $(document).ready(function (qq) {
+        $('#myBtn').on('click', function(){
+            $('html, body').animate({scrollTop:0}, 'slow');
+        });
+    });
+</script>
+
+
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-loader/angular-loader.js"></script>
+<script src="bower_components/angular-mocks/angular-mocks.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/sp-manager/dist/sp-manager.js"></script>
+<script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/ngMask/dist/ngMask.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<!-- endinject -->
+
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="app.run.js"></script>
+<script src="dist/app-1500520956-min.js"></script>
+<!-- inject:js -->
+<!-- endinject -->
+
+
+<script type="text/javascript" src="views/about/goals/_module.js"></script>
+<script type="text/javascript" src="views/about/goals/goals-core/_module.js"></script>
+<script type="text/javascript" src="views/about/goals/goals-core/goal-service/_module.js"></script>
+<script type="text/javascript" src="views/about/goals/goals-core/goal-service/goal-service.js"></script>
+<script type="text/javascript" src="views/about/goals/goal-detailsCtrl.js"></script>
+</body>
+</html>

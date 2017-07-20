@@ -1,0 +1,12 @@
+{
+  "goalsJS": [
+    "./app/veiws/about/goals/goals-core/goal-service/_module.js",
+    "./app/veiws/about/goals/goals-core/goal-service/goal-service.js",
+    "./app/veiws/about/goals/goals-core/_module.js",
+    "./app/veiws/about/goals/_module.js",
+    "./app/veiws/about/goals/goal-detailsCtrl.js"
+  ],
+  "gsJS": [
+    "./app/veiws/about/goals/goals-core/goal-service/_module.js"
+  ]
+}
