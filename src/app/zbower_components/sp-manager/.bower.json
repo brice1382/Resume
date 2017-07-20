@@ -1,0 +1,24 @@
+{
+  "name": "sp-manager",
+  "description": "Library to add small functions to AngularJS. Mainly a rootScope flag for animations.",
+  "homepage": "https://github.com/brice1382/sp-manager",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "angular-loader": "^1.6.4",
+    "angular-mocks": "^1.6.4",
+    "angular-scenario": "^1.6.5"
+  },
+  "_release": "5accdd64a5",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "5accdd64a58af10728e0a1736701a856d20750f9"
+  },
+  "_source": "https://github.com/brice1382/sp-manager.git",
+  "_target": "*",
+  "_originalSource": "sp-manager",
+  "_direct": true
+}
