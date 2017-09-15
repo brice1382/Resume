@@ -15,37 +15,6 @@ var gls         = require('./gulp.config.json');
 
 var timeStamp   = (Math.floor(Date.now() / 1000));
 
-// gulp.task('vendorJS', function() {
-//     gulp.src([
-//         './bower_components/angular/angular.js',
-//         './bower_components/angular-route/angular-route.js',
-//         './bower_components/angular-resource/angular-resource.js',
-//         './bower_components/ngMask/dist/ngMask.js',
-//         './bower_components/sp-manager/dist/sp-manager.js',
-//         './bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js',
-//         './bower_components/bootstrap/dist/js/bootstrap.js',
-//         './bower_components/sweetalert/dist/sweetalert.min.js'
-//     ])
-//         .pipe(sourcemaps.init())
-//         .pipe(concat('vendor-' + timeStamp + '.js'))
-//         .pipe(sourcemaps.write())
-//         .pipe(gulp.dest('./app/dist'))
-// });
-
-// gulp.task('vendorCSS', function () {
-//     gulp.src([
-//         './bower_components/animate.css/animate.css',
-//         './bower_components/bootstrap/dist/css/bootstrap.css',
-//         './bower_components/font-awesome/css/font-awesome.css',
-//         './bower_components/sweetalert/dist/sweetalert.css'
-//     ])
-//         .pipe(concat('vendorCSS-' + timeStamp + '.css'))
-//         .pipe(gulp.dest('./temp'))
-//         .pipe(cleanCss())
-//         .pipe(rename('vendor-' + timeStamp + '-min.css'))
-//         .pipe(gulp.dest('./app/dist'))
-// });
-
 gulp.task('siteJS', function () {
     gulp.src([
         "./app/views/about/_module.js",
